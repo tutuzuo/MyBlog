@@ -2,8 +2,8 @@
 title: PHOTORAMA
 email: ""
 description: "Photo Journal"
-url: "http://sunbliss.github.io"
-baseurl: /photorama
+url: "http://tutuzuo.github.io/blog.github.io"
+baseurl: /MyBlog
 instagram_username: ""
 github_username:  ""
 deviantart_username: ""
@@ -54,7 +54,7 @@ paginate_path: "/journal/page:num/"
 permalink: "/journal/:title/"
 categories_path: "/journal/category/"
 tags_path: "/journal/tag/"
-gems: 
+gems:
  - jekyll-paginate
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 
