@@ -1,78 +1,96 @@
-mediator
-========
+p h o t o r a m a 
+====================
 
-A medium inspired Jekyll blog theme. The basic idea came from the Ghost theme
-[Readium 2.0](http://www.svenread.com/readium-ghost-theme/). I use mediator on my own blog [The Base](http://blog.base68.com).
+![photorama](https://raw.githubusercontent.com/sunbliss/photorama/gh-pages/photorama_thumb.gif)
 
-Screenshots
---------
-![screenshot](/assets/images/screenshot1.jpg)
-![screenshot](/assets/images/screenshot2.jpg)
-![screenshot](/assets/images/screenshot3.jpg)
 
-Features
--------
-* Fully Responsive layout
-* Use header images in articles, if you want to (add tag "image" and url to the image in the front matter section of a post)
-* Minimal design
-* Featured article support
-* FontAwesome implemented for easy use of icons fonts
-* Free & Open Source Font usage
+![Speed Test](https://raw.githubusercontent.com/sunbliss/photorama/gh-pages/Website%20Speed%20Test.png)
 
-Getting Started
----
-- [Fork this repository](https://github.com/dirkfabisch/mediator)
-- Clone it: `git clone https://github.com/YOUR-USER/mediator`
-- Install the requried gems ([GitHub Pages](https://github.com/github/pages-gem), [Bourbon](https://github.com/thoughtbot/bourbon) and [Jekyll](https://github.com/jekyll/jekyll), [Jemoji](https://github.com/jekyll/jemoji)): `bundle install`
-- Run the jekyll server: `bundle exec jekyll serve`
+----------
 
-You should have a server up and running locally at <http://localhost:4000>.
+---> [DEMO](http://sunbliss.github.io/photorama/ "DEMO")  <---
 
-Configuration
------
+----------
 
-The main settings happen in side of the _config.yml file:
+A theme for **jekyll**. 
 
-### Site
+Created for gh-pages (project page).
 
-Main settings for the site
+This template was crafted having in mind the photobloggers.
 
-* **title**: name of your site
-* **description**: description of your site
-* **logo**: small logo for the site (300x * 300x)
-* **cover**: large background image on the index page
+It uses [Clean Blog](https://github.com/BlackrockDigital/startbootstrap-clean-blog-jekyll "Clean Blog") as its basis.
 
-* **name**: name site owner
-* **email**: mail address of the site owner
-* **author**: author name
-* **author_image**: small image of author (300x * 300px)
-* **disqus**: add a disqus forum for your post
+----------
 
-### Social
+ **IMPORTANT!!!**
+================
 
-The template allows to add all major social plattforms to your site.
-Fill the the form for each plattform. If you leave the share_* entries empty, the sharing buttons below a post are not shown.  If you leave the **url** and **desc** empty the icons are not shown on the index page, but the share icons on the article pages remains untouched (Thanks to [Phil](https://github.com/philsturgeon))
+###Before you begin: Change the URL and the BASEURL in the _config.yml
 
-* **icon**:	name of social plattform (must match a name of [font-awsome](http://fortawesome.github.io/Font-Awesome/) icon set )
-* **url**:	url of your account
-* **desc**: slogan of the plattform
-* **share_url**: share url
-* **share_title**: first part of url for the title
-* **share_link**: second part of the share url for the link to the post
+The **URL** should say `http://yourusername.github.io`
 
-The Liquid template engine will magical combine the different parts to a share url.
+The **BASEURL** should say `/repositoryname`
 
-```
-http://twitter.com/share?text=post_title&amp;url=post_url
-````
+If there are problems with loading assets like CSS files and images, make sure that both **URL** and **BASEURL** are set correctly!!! 
 
-See [_config.yml](https://github.com/dirkfabisch/mediator/blob/master/_config.yml) for more examples.
+----------
 
-Licensing
----------
+If you want to use your **own domain** go to the root of your project's repository, create a CNAME file and add a line with your domain name, e.g. `www.yourdomain.com`.
 
-[MIT](https://github.com/dirkfabisch/mediator/blob/master/LICENCE) with no added caveats, so feel free to use this on your site without linking back to me or using a disclaimer or anything silly like that.
+Go to your domain name registrar and add a CNAME record pointing your domain to GitHub Pages:
+- type: CNAME
+- host: www.yourdomainname.com
+- answer: yourusername.github.io/repositoryname
+- TTL: 300
 
-Contact
--------
-I'd love to hear from you at [@dirkfabisch](https://twitter.com/dirkfabisch). Feel free to open issues if you run into trouble or have suggestions. Pull Requests always welcome.
+----------
+
+Usage
+============ 
+
+###Quick Start
+
+1. [Fork this repository](https://github.com/sunbliss/photorama/fork) to get started. 
+2. Go to `https://github.com/yourusername/photorama/settings`
+3. Rename the repository to your new project, e.g. *myphotoblog*
+2. Create a new branch called `gh-pages` in your repository. 
+3. Go to the branches directory at `https://github.com/yourusername/repositoryname/branches` and *change* **default branch** to **gh-pages**.
+4. Delete **master** branch. 
+3. GitHub will build your site automatically and publish it at `http://yourusername.github.io/repositoryname/`.  
+
+----------
+
+- The homepage welcomes the visitors with 3 animated photos of your choice. It is recommended that all three are landscape orientated for best view.
+
+To change the welcome content at the far left of the Home page go here: `/index.html`
+
+----------
+
+- To enable **disqus** comments in the posts, change their front matter for comments to 'true'.
+
+You must have a registered account in disqus, where you will also register a forum for your website.
+
+Find the line `s.src = '//yourproject.disqus.com/embed.js';  // ` in the disqus_comments.html and REPLACE 'yourproject' with your forum shortname.
+
+----------
+
+- In order to send **newsletters** about your posts to your subscribers, you should register an account in [tinyletter](http://www.tinyletter.com " tinyletter").
+
+Find the line `'https://tinyletter.com/yourproject', ` in the *newsletter.html* and replace 'yourproject' with your registered website.
+
+You can always ommit the newsletter rendering by deleting the line `{% include newsletter.html %}
+` in the *default.html* layout.
+
+----------
+
+If you want to use the matching **NEWSLETTER** template, you must always create a new file  by copying its respective index.html and renaming it to e.g. 2016-March-newsletter.html and then save it inside the folder and the accompanying images inside the 'images folder', so it can be accessed to your viewers through their browser. In this case the root url for the above newsletter will be ***http://yourgithubusername.github.io/yourproject/2016-March-newsletter.html***. Copy this link and replace this part of the code `http://www.yoursite.com/newsletter/year-month-newsletter` with it.
+
+----------
+
+**TAGS** and **CATEGORIES** of the posts 
+
+When you add a tag or a category name in the front matter of a post, don't forget to add the responding markdown files in /journal/tag/ folder and in /journal/category folder, so they can always render when browsing the journal or searching in the respective page.
+
+----------
+
+I hope you will find it useful for your projects, photographic or not.
