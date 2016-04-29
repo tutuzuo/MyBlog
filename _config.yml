@@ -2,8 +2,8 @@
 title: PHOTORAMA
 email: ""
 description: "Photo Journal"
-url: "http://tutuzuo.github.io/blog.github.io"
-baseurl: /MyBlog
+url: "http://tutuzuo.github.io"
+baseurl: /blog.github.io
 instagram_username: ""
 github_username:  ""
 deviantart_username: ""
