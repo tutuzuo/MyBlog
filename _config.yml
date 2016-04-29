@@ -31,9 +31,9 @@ comments :
 
 # Internal nav
 nav:
- journal: "baseurl/journal/"
- gallery: "baseurl/gallery/"
- about: "baseurl/about/"
+ journal00: "baseurl/journal/"
+ gallery00: "baseurl/gallery/"
+ about00: "baseurl/about/"
 
 # All translation keys
 translations:
